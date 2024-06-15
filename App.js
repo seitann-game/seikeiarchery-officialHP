@@ -1,28 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-class App extends React.Component{
+class App extends Component {
+  render() {
+    //OutlineのURLをつける
+    const OutlineURL = ""
+    //AccessのURLをつける
+    const AccessURL = ""
+    //ExplainのURLをつける
+    const ExplainURL = ""
 
-
-  render(){
-    console.log("ひつじ仙人")
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Hello React!</h1>
-          <p>
-            <code>src</code>を編集したら保存する。
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn
-          </a>
         </header>
+
+        <div className="contents">
+          <a href="#" className="btn outline">
+            <h1>Outline</h1>
+            <p>概要</p>
+          </a>
+          <a href="#" className="btn access">
+            <h1>Access</h1>
+            <p>アクセス</p>
+          </a>
+          <a href="#" className="btn explain">
+            <h1>Explain</h1>
+            <p>弓具紹介</p>
+          </a>
+        </div>
+
+        <footer>
+        </footer>
       </div>
     );
   }
