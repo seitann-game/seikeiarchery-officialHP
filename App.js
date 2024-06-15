@@ -14,7 +14,8 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          リアクト学ぶ
+          リアクト
+        
         </a>
       </header>
     </div>
