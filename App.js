@@ -10,8 +10,9 @@ class App extends React.Component{
     return (
       <div className="App">
         <header className="App-header">
+          <h1>Hello React!</h1>
           <p>
-            Edit <code>src</code> and save to reload.
+            <code>src</code>を編集したら保存する。
           </p>
           <a
             className="App-link"
@@ -19,8 +20,7 @@ class App extends React.Component{
             target="_blank"
             rel="noopener noreferrer"
           >
-            リアクト
-        
+            Learn
           </a>
         </header>
       </div>
