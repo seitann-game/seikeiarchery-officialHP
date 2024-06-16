@@ -1,9 +1,26 @@
 .App {
   text-align: center;
 }
-header{
-
+.center{
+  width:1150px;
+  margin:0 auto;
 }
+
+header{
+  height:70px;
+  width:100%;
+  position:fixed;
+  top:0;
+  z-index:5;
+  background-color: #d3d3d3;
+}
+.header-left{
+  float:left;
+}
+.header-right{
+  float:right;
+}
+
 
 .btn{
   margin:0 auto;
