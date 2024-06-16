@@ -5,23 +5,40 @@ class App extends Component {
   render() {
     //TopページのＵＲＬ
     const TopURL = "https://seikeiuniversityarcheryclub000.fc2.page/"
+    //クラブ紹介のURL
+    const ClubURL = ""
+    //部員紹介のURL
+    const MemberURL = ""
+    //競技結果のURL
+    const ResultURL =""
+    //ライブラリのURL
+    const LibraryURL =""
+    //OB・OG会のURL
+    const OBOGURL = ""
     //アーチェリークラブのロゴ
-    const archerylogo = ""
-    //OutlineのURLをつける
+    const Archerylogo = ""
+    //OutlineのURL
     const OutlineURL = ""
-    //AccessのURLをつける
+    //AccessのURL
     const AccessURL = ""
-    //ExplainのURLをつける
+    //ExplainのURL
     const ExplainURL = ""
 
     return (
       <div className="App">
         <header className="App-header">
-          <a href={TopURL} className="header-left">
-            <img class="logo" src={archerylogo}>
+          <a href={TopURL} className="center header-left">
+            <img class="logo" src={Archerylogo}>
           </a>
-          <div className="header-right">
-            <a href="#" className=""></a>
+          <div className="center header-right">
+            <ul class="center gnavi">
+              <li class="current"><a href={TopURL}>TOP</a></li>
+              <li><a href={ClubURL}>クラブ紹介</a></li>
+  　          <li><a href={MemberURL}>部員紹介</a></li>
+              <li><a href={ResultURL}>競技結果</a></li>
+              <li><a href={LibraryURL}>ライブラリ</a></li>
+              <li><a href={OBOGURL}>OB・OG会</a></li>
+            </ul>
           </div>
         </header>
 

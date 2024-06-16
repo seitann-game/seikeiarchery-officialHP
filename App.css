@@ -20,8 +20,86 @@ header{
 .header-right{
   float:right;
 }
+.gnavi{
+  display:flex;
+  justify-content:center;
+  margin:0 0 50px 0;
+  list-style:none;
+}
+.gnavi a{
+  display:block;
+  padding:10px 30px;
+  text-decoration:none;
+  color:#333;
+}
+.gnavi li{
+  margin-bottom:20px;
+}
+.gnavi li a{
+  position:relative;
+}
+.gnavi li.current a,
+.gnavi li a:hover{
+  color:#0481A2;
+}
+.gnavi li a::after {
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:10%;
+  width:80%;
+  height:2px;
+  background:#0481A2;
+  transition:all .3s;
+  transform:scale(0,1);
+  transform-origin:left top;
+}
+.gnavi li.current a::after,
+.gnavi li a:hover::after{
+  transform:scale(1,1);
+}
 
 
+.contents{
+  
+}
 .btn{
+  width:1150px;
+  height:120px;
   margin:0 auto;
+  opacity:0.8;
+  transition: 0.5s;
+  position: relative;
+  display:inline-block;
+}
+.btn:hover{
+  opacity:1;
+}
+.btn h1{
+  position: absolute;
+  top:20px;
+  left:20px;
+  height:50px;
+  margin-right:30px;
+  color:#000;
+  float:left;
+}
+.btn p{
+  position: absolute;
+  top:40px;
+  height:30px;
+  color:#000;
+  float:left;
+}
+.outline{
+  margin-bottom:50px;
+  background-image:url("");
+}
+.access{
+  margin-bottom:50px;
+  background-image:url("");
+}
+.explain{
+  margin-bottom:50px;
+  background-image:url("");
 }
